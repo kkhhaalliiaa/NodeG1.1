@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Concert+One&family=Poiret+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/img/background.jpeg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Bangers', cursive; 
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #d2bd7160;
+    border-radius: 8px;
+    padding: 32px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+    width: 600px;
+    backdrop-filter: blur(5px);
+}
+
+
+footer {
+    color: whitesmoke;
+    padding: 16px 0;
+    text-align: center;
+    background: rgb(189, 213, 231);
+    background: radial-gradient(circle, rgba(189, 213, 231, 1) 6%, rgba(97, 174, 224, 1) 100%);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+header {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    color: #0a5894;
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Bangers', cursive; 
+}
+
+p {
+    color: whitesmoke;
+    font-size: 30px; 
+    text-align: center;
+    font-family: 'Bangers';
+}
+
+#message-1,#message-2{
+    color: whitesmoke;
+    font-size: 30px; 
+    text-align: center;
+    font-family: 'Bangers';
+}
+
+.portrait {
+    width: 350px;
+    height: 350px;
+    margin-top: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    border: 1px solid #Bdd5e7;
+    padding: 14px;
+    font-family: 'Bangers';
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 16px;
+    background-color: #ffffff;
+    color: #528aae;
+    font-size: 18px; 
+}
+
+select#unit-select {
+    width: 100%;
+    padding: 12px;
+    font-family: 'Bangers', cursive;
+    font-size: 18px;
+    border: 1px solid #ffbf006f;
+    border-radius: 8px;
+    background-color: #ffbf00dd;
+    color: whitesmoke;
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+select#unit-select:focus {
+    border-color: #528aae;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #Bdd5e7;
+    background-color: #Bdd5e7;
+    color: #528aae;
+    padding: 14px; 
+    font-family: 'Bangers';
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 16px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #528aae;
+    color: whitesmoke;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background: rgb(189, 213, 231);
+    background: radial-gradient(circle, rgba(189, 213, 231, 1) 6%, rgba(97, 174, 224, 1) 100%);
+    padding: 20px 40px; 
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    border-radius: 8px;
+}
+
+nav a{
+    color: whitesmoke;
+    margin-left: 16px;
+    margin-right: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav a:hover{
+    color: #BDD5E7;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1024px) {
+    body {
+        padding: 0 12px;
+    }
+
+    header {
+        margin-top: 8px;
+        margin-bottom: 0; 
+    }
+
+    h1 {
+        font-size: 50px;
+        margin-bottom: 8px; 
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .portrait {
+        width: 220px;
+        height: 220px;
+        margin-top: 8px;
+    }
+
+    .main-content {
+        max-width: 90%;
+        margin-top: 16px;
+    }
+
+    nav {
+        padding: 16px 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0 12px;
+    }
+
+    p {
+        font-size: 28px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 12px 0;
+    }
+
+    nav a {
+        margin-bottom: 8px;
+        font-size: 20px; 
+    }
+
+    .portrait {
+        width: 180px;
+        height: 180px;
+        margin-top: 8px;
+    }
+
+    input, button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px; 
+    }
+
+    footer {
+        padding: 12px 0;
+    }
+
+    .main-content {
+        max-width: 95%;
+        margin-top: 12px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+        margin-bottom: 8px; 
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+    nav a {
+        margin-bottom: 6px;
+        font-size: 18px; 
+    }
+
+    .portrait {
+        width: 150px;
+        height: 150px;
+    }
+
+    footer {
+        font-size: 16px; 
+        padding: 10px 0;
+    }
+
+    .main-content {
+        max-width: 100%;
+        margin-top: 8px; 
+    }
+}
