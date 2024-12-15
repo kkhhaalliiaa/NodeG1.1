@@ -9,14 +9,14 @@ https://node-g1-1-6emc.vercel.app/
 
 # Features:
 
-Current weather: Shows real-time weather conditions including the temperature and feels like.
-Extended forecast: View a 7-day weather forecast.
-Multiple locations: Add and switch between multiple locations.
-User customization: Choose between Celsius/Fahrenheit/Kelvin and a variety of themes.
-Responsive design: Fully responsive for mobile, tablet, and desktop.
+- Current weather: Shows real-time weather conditions including the temperature and feels like.
+- Extended forecast: View a 7-day weather forecast.
+- Multiple locations: Add and switch between multiple locations.
+- User customization: Choose between Celsius/Fahrenheit/Kelvin and a variety of themes.
+- Responsive design: Fully responsive for mobile, tablet, and desktop.
 
 # Technologies Used:
-HTML/CSS: For structure and styling of the app.
-JavaScript: To handle user input, fetch weather data, and update the UI dynamically.
-WeatherStack API: For retrieving live weather data.
-Vercel: Deployment platform for hosting the web application.
+- HTML/CSS: For structure and styling of the app.
+- JavaScript: To handle user input, fetch weather data, and update the UI dynamically.
+- WeatherStack API: For retrieving live weather data.
+- Vercel: Deployment platform for hosting the web application.
